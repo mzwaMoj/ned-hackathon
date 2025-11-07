@@ -80,9 +80,7 @@ mlartifacts/
 mlflow.db
 *.db
 
-agents/
-app/
-documents/
+
 presentation/
 .env.production
 notebooks/
