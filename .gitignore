@@ -116,7 +116,6 @@ logs/
 *.bin
 *.onnx
 *.pb
-models/
 checkpoints/
 
 # Database files
