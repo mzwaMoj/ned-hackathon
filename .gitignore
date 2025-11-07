@@ -25,15 +25,15 @@ MANIFEST
 
 
 # But track these specific folders
-!Lessons_AzureOpenAI/
-!Lessons_OpenAI/
+Lessons_AzureOpenAI/
+Lessons_OpenAI/
 
 # Track essential files
-!.gitignore
-!README.md
-!Readme.md
-!EXAMPLE_QUESTIONS.md
-!requirements.txt
+# !.gitignore
+# !README.md
+# !Readme.md
+# !EXAMPLE_QUESTIONS.md
+# !requirements.txt
 !.env.template
 
 
@@ -53,7 +53,7 @@ venv.bak/
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 .jupyter/
-notebooks/
+
 
 # IPython
 profile_default/
@@ -86,7 +86,7 @@ documents/
 presentation/
 .env.production
 notebooks/
-presentation/
+
 
 # ChromaDB - Vector database files (can be large)
 index/
@@ -135,9 +135,8 @@ checkpoints/
 
 # Node modules (for frontend)
 node_modules/
-src_frontend/
 src_frontend/node_modules/
-package-lock.json
+
 
 # Build artifacts
 src_frontend/build/
