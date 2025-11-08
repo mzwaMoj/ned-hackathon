@@ -30,39 +30,39 @@ export function ChatMessage({ role, content, timestamp, isStreaming }: ChatMessa
     <div
       className={cn(
         "flex gap-3 py-4 px-4 sm:px-6",
-        isUser && "bg-zinc-50 dark:bg-zinc-900/30",
-        isSystem && "bg-green-50 dark:bg-green-950/30 border-l-4 border-green-500 dark:border-green-400"
+        isUser && "bg-zinc-50",
+        isSystem && "bg-green-50 border-l-4 border-green-500"
       )}
     >
       <div
         className={cn(
           "flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center",
-          isUser ? "bg-zinc-200 dark:bg-zinc-800" : isSystem ? "bg-green-500 dark:bg-green-600" : "bg-blue-100 dark:bg-blue-900"
+          isUser ? "bg-zinc-200" : isSystem ? "bg-green-500" : "bg-blue-100"
         )}
       >
         {isUser ? (
-          <User className="w-4 h-4 text-zinc-700 dark:text-zinc-300" />
+          <User className="w-4 h-4 text-zinc-700" />
         ) : isSystem ? (
           <AlertCircle className="w-4 h-4 text-white" />
         ) : (
-          <Bot className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+          <Bot className="w-4 h-4 text-blue-600" />
         )}
       </div>
 
       <div className="flex-1 min-w-0 space-y-1">
         <div className="flex items-center gap-2">
-          <span className="text-sm font-medium text-zinc-900 dark:text-zinc-50">
+          <span className="text-sm font-medium text-zinc-900">
             {isUser ? "You" : isSystem ? "System" : "Assistant"}
           </span>
           {formattedTime && (
-            <span className="text-xs text-zinc-500 dark:text-zinc-400">
+            <span className="text-xs text-zinc-500">
               {formattedTime}
             </span>
           )}
         </div>
         
         <div className={cn(
-          "text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed whitespace-pre-wrap",
+          "text-sm text-zinc-700 leading-relaxed whitespace-pre-wrap",
           isStreaming && "animate-pulse"
         )}>
           {content}

@@ -42,11 +42,11 @@ export function ChatInput({
           disabled={disabled}
           placeholder={placeholder}
           className={cn(
-            "w-full px-4 py-3 pr-12 rounded-lg border border-zinc-200 dark:border-zinc-800",
-            "bg-white dark:bg-zinc-900",
-            "text-zinc-900 dark:text-zinc-50",
-            "placeholder:text-zinc-400 dark:placeholder:text-zinc-500",
-            "focus:outline-none focus:ring-2 focus:ring-green-500 dark:focus:ring-green-400 focus:border-transparent",
+            "w-full px-4 py-3 pr-12 rounded-lg border border-zinc-200",
+            "bg-white",
+            "text-zinc-900",
+            "placeholder:text-zinc-400",
+            "focus:outline-none focus:ring-2 focus:ring-[#00C853] focus:border-transparent",
             "disabled:opacity-50 disabled:cursor-not-allowed"
           )}
         />
@@ -56,7 +56,7 @@ export function ChatInput({
         disabled={disabled || !input.trim()}
         className={cn(
           "flex-shrink-0 w-10 h-10 rounded-full",
-          "bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700",
+          "bg-[#00C853] hover:bg-[#00B048]",
           "text-white",
           "flex items-center justify-center",
           "transition-colors",

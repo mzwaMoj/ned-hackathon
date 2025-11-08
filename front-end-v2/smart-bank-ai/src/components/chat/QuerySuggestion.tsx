@@ -14,16 +14,16 @@ export function QuerySuggestion({ text, onClick }: QuerySuggestionProps) {
       onClick={onClick}
       className={cn(
         "w-full px-4 py-3 rounded-lg",
-        "bg-white dark:bg-zinc-900",
-        "border border-zinc-200 dark:border-zinc-800",
-        "text-left text-sm text-zinc-700 dark:text-zinc-300",
-        "hover:bg-zinc-50 dark:hover:bg-zinc-800",
-        "hover:border-green-500 dark:hover:border-green-400",
+        "bg-white",
+        "border border-zinc-200",
+        "text-left text-sm text-zinc-700",
+        "hover:bg-zinc-50",
+        "hover:border-[#00C853]",
         "transition-colors",
         "flex items-center gap-2"
       )}
     >
-      <Sparkles className="w-4 h-4 text-green-500 dark:text-green-400 flex-shrink-0" />
+      <Sparkles className="w-4 h-4 text-[#00C853] flex-shrink-0" />
       <span className="flex-1">{text}</span>
     </button>
   );
